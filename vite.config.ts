@@ -28,16 +28,16 @@ export default defineConfig({
   ],
   server: {
     host: 'tma.internal',
-    port: 443,
-
+    
+    // port: 443,
     // Uncomment the next lines in case, you would like to run Vite dev server using HTTPS and in
     // case, you have trusted key and certificate. You retrieve your certificate and key
     // using mkcert.
     // Learn more: https://docs.telegram-mini-apps.com/platform/getting-app-link#mkcert
-    https: {
-      cert: readFileSync(resolve('certificates/tma.internal.pem')),
-      key: readFileSync(resolve('certificates/tma.internal-key.pem')),
-    },
+    // https: {
+    //   cert: readFileSync(resolve('certificates/tma.internal.pem')),
+    //   key: readFileSync(resolve('certificates/tma.internal-key.pem')),
+    // },
   },
   publicDir: './public',
 });
